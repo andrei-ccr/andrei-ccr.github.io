@@ -5,6 +5,12 @@
 	body > header > nav {
 		display: none;
 	}
+	body > main .nav-links a {
+		display: block;
+	}
+	body > footer a {
+		display: block;
+	}
 
 
 	body > main > #projects > .project-box > img {
@@ -14,6 +20,14 @@
 		display: block;
 		margin: 0px 0px 20px 0px;
 	}
+	
+	body > main > #projects {
+		padding: 10px;
+	}
+	body > main > #projects > .project-box > p {
+		width: auto;
+	}
+	
 	
 	body > main.contact-container a {
 		display: block;
@@ -27,8 +41,8 @@
 		grid-gap: 20px;
 		height: auto;
 		border: 5px solid #9097ad;
-		margin-left:5vw;
-		margin-right:5vw;
+		margin-left:0 !important;
+		margin-right:0 !important;
 	}
 
 	body > main > #projects > .project-box > h3 {
@@ -183,7 +197,7 @@ main #projects > h3 >i.fab {
 	line-height: 20px;
 	width: 331px;
 }
-.project-box > img {
+.project-box img {
 	font-size:13px;
 	color: black;
 	grid-column-start: 3;
@@ -211,7 +225,7 @@ main #projects > h3 >i.fab {
 }
 .project-box .project-buttons > a:nth-child(1) {
 	background-color: #9097ad;
-    color: #2a2e39;
+    color: #ffffff;
     padding: 10px;
     border-radius: 4px;
 }
@@ -336,6 +350,13 @@ footer > span {
 	font-size:11px;
 	margin-top:20px;
 }
+
+footer > p > span > a {
+	font-size: 15px;
+    font-weight: 500;
+    color: white;
+}
+
 footer a {
 	color:#d2d224;
 	margin:10px;
