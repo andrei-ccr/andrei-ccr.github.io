@@ -1,8 +1,75 @@
+@media only screen and (max-width: 700px) {
+	html {
+		font-size: 40.5% !important;
+	}
+	
+	/* Intro section */
+	body .intro-div, body .work-div {
+		width: 250px;
+		left: 50%;
+		margin-left: -125px;
+		padding: 0;
+	}
+	
+	body .intro-div p {
+		margin-bottom: 12px;
+	}
+	
+	
+	/* Project list */
+	body .project {
+		width: 250px;
+	}
+	
+	body .project img {
+		width: 210px;
+	}
+	
+	
+	/* Modal */
+	body .modal .container {
+		width: 95%;
+		text-align: center;
+	}
+	
+	body .modal .container .slide, body #slide-left-btn, body #slide-right-btn {
+		display:none;
+	}
+	
+	body .modal .container h1 {
+		text-align: center;
+	}
+	
+	body .modal .container .tags {
+		justify-content: center;
+	}
+	
+	body .modal .container p {
+		font-size: 2.0rem;
+		width: 90%;
+	}
+	
+	body .modal .container .viewsite-btn, body .modal . container .viewsrc-btn {
+		margin: 40px auto;
+	}
+	
+	body .modal .container .close-btn {
+		display: block;
+		font-size: 2.5rem;
+		padding:10px;
+		cursor: pointer;
+	}
+}
+
 * {
 	padding: 0;
 	margin: 0;
 	font-family: 'Raleway', sans-serif;
 
+}
+
+html {
+	font-size: 62.5%;
 }
 
 body {
@@ -19,7 +86,7 @@ em, a {color: inherit;}
 
 .intro-div, .work-div, .sep-div {
 	padding: 0px 20px; 
-	font-size: 45px; 
+	font-size: 4.5rem; 
 	margin: auto;
 	display: block;
 	min-height: 100vh;
@@ -38,10 +105,31 @@ em, a {color: inherit;}
 .intro-div p { display: inline-block; }
 .intro-div .iword-name {color:#FFFFFF00; position: relative; top: 150px;}
 .intro-div .iword-hello {display: block; position: relative; top: -100px;}
-.intro-div .iword-basic {color: #ffffff00;  position: relative; top: 150px; }
-.intro-div .iword-basic2 {color: #ffffff00;  position: relative; top: 150px; font-size: 40px; }
-.intro-div .iword-basic3 {color: #ffffff00;  position: relative; top: 150px; font-size: 35px; font-weight:200;}
-.intro-div .iword-basic4 {color: #ffffff00;  position: relative; top: 150px; font-size: 30px; font-weight:200;}
+.intro-div .iword-basic {
+	color: #ffffff00;  
+	position: relative; 
+	top: 150px; 
+}
+.intro-div .iword-basic2 {
+	color: #ffffff00;  
+	position: relative; 
+	top: 150px; 
+	font-size: 4.0rem; 
+}
+.intro-div .iword-basic3 {
+	color: #ffffff00;  
+	position: relative; 
+	top: 150px; 
+	font-size: 3.5rem; 
+	font-weight:200;
+}
+.intro-div .iword-basic4 {
+	color: #ffffff00;  
+	position: relative; 
+	top: 150px; 
+	font-size: 3.0rem; 
+	font-weight:200;
+}
 
 .project {
 	width: 370px;
@@ -95,6 +183,7 @@ em, a {color: inherit;}
 	width: 638px;
 	margin: auto;
 	line-height: 25px;
+	font-size: 1.0rem;
 }
 
 .modal .container .tags {
@@ -113,6 +202,12 @@ em, a {color: inherit;}
 	letter-spacing: 1px;
 	box-shadow: 0px 0px 1px #4082f9;
 	margin-right: 10px;
+	display: flex;
+	align-items: center;
+}
+
+.modal .container .close-btn {
+	display: none;
 }
 
 .modal .container .slide {

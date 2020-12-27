@@ -60,6 +60,8 @@ $(document).ready(function() {
 					<div class="tags">`+ tags +`</div>
 					<p>`+ projectDetails[proj].desc +`</p>
 					`+ prev +`
+					
+					<a class="close-btn">Close</a>
 				</div>
 			</div>
 		
@@ -82,6 +84,10 @@ $(document).ready(function() {
 		if(e.target !== e.currentTarget) return;
 		currentProject = null;
 		$(this).remove();
+	});
+	
+	$(document).on("click", ".modal .close-btn", function(e) {
+		$(".modal").remove();
 	});
 	
 	$(document).on("click", ".viewsite-btn", function(e) {
